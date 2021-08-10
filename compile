@@ -1,0 +1,22 @@
+#!/bin/bash
+ocamlopt -c  types.mli
+ocamlopt -c  types.ml
+ocamllex lexer.mll
+ocamlyacc parser.mly
+ocamlopt -c  parser.mli
+ocamlopt -c  lexer.ml
+ocamlopt -c  parser.ml
+ocamlopt -c  render.ml
+export LIBRARY_PATH=/opt/X11/lib
+ocamlopt -o  render  /Users/ozan/.opam/4.07.1/lib/ocaml/graphics.cmxa types.cmx  lexer.cmx parser.cmx  render.cmx
+
+# mv ./render6 /Users/ozan/Google\ Drive/Current/Coral\ 3d\ Rendering/Model2_Experiments/
+
+rm *.cmi
+rm *.cmx
+rm *.o
+rm lexer.ml
+rm parser.ml
+rm parser.mli
+
+# ozan$ ls `ocamlc -where`/graphics*

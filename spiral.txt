@@ -1,0 +1,10 @@
+A two-dimensional, or plane, spiral may be described most easily using polar coordinates, 
+where the radius r is a monotonic continuous function of angle phi :
+
+r=r(phi) 
+
+The circle would be regarded as a degenerate case (the function not being strictly monotonic, but rather constant).
+
+In x-y-coordinates the curve has the parametric representation:
+
+x=r(phi) cos phi, y=r(phi ) sin phi 

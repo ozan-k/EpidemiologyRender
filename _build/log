@@ -1,0 +1,4 @@
+# dune uninstall
+# OCAMLPARAM: unset
+$ /usr/bin/getconf _NPROCESSORS_ONLN > /var/folders/8r/m0d981t90zv19qgg1d1_23tc0000gn/T/dunedf50c8.output 2> /dev/null
+$ /Users/ozan/.opam/4.07.1/bin/ocamlc.opt -config > /var/folders/8r/m0d981t90zv19qgg1d1_23tc0000gn/T/dune56fb25.output
